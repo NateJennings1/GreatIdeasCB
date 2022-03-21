@@ -1,3 +1,12 @@
+################################################################################
+# Nathaniel Jennings
+# parseRawData.py
+################################################################################
+'''
+Runs on local github directory to parse items in raw data into pandas dataframes in 
+processed data folder. 
+'''
+
 from fastqFormat import *
 import os
 
