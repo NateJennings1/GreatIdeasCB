@@ -1,0 +1,9 @@
+The ena website contains "shotgun metagenomic data" for a few hundred individuals.
+
+The filereport json contains a lot of information, but one of the most useful is the 
+correspondance between samples and individual's identifer. 
+The supplementary data of the paper contains phenotypic and subject metadata (diagnosis)
+as well as their identifier.
+
+The raw data in raw data is just the sample however, so it must be tied to the individual 
+by looking at the json file.
