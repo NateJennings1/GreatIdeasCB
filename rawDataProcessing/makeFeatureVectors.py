@@ -66,11 +66,16 @@ def main():
     pathRoot = '../processed data'
     # Use pandas.read_pickle
     markerData.to_pickle(pathRoot+'/marker.pickle')
+    markerData.to_csv(pathRoot+'/marker.csv')
     abundanceData.to_pickle(pathRoot+'/abundance.pickle')
+    abundanceData.to_csv(pathRoot+'/abundance.csv')
     categoricalData.to_pickle(pathRoot+'/categorical.pickle')
+    categoricalData.to_csv(pathRoot+'/categorical.csv')
     forbiddenData.to_pickle(pathRoot+'/forbidden.pickle')
+    forbiddenData.to_csv(pathRoot+'/forbidden.csv')
     # Use np.load
     np.save(pathRoot+'/groundTruth.npy',groundTruth)
+    #np.savetxt("groundTruth.csv", groundTruth, delimiter=",")
     return markerData,abundanceData,categoricalData,forbiddenData,groundTruth
 
     
